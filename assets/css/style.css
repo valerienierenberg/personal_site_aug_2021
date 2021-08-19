@@ -21,6 +21,7 @@ body::before {
   position: fixed;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), #040404 url("../img/oculus_headshot_cropped_redo.png") top right no-repeat;
   background-size: cover;
+  margin: 0 auto;
   left: 0;
   right: 0;
   top: 0;
@@ -34,7 +35,7 @@ body::before {
   }
 }
 
-@media (min-width: 300px) {
+@media (max-width: 400px) {
   body::before {
     background-attachment: fixed;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), #040404 url("../img/mobilecrop2.jpg") top right no-repeat;
@@ -42,6 +43,7 @@ body::before {
     background-position: center;
   }
 }
+
 
 a {
   color: #18d26e;
@@ -1181,4 +1183,8 @@ section .container {
   50% {
     opacity: 0;
   }
+}
+
+.icon-green {
+  color: #18d26e;
 }
