@@ -34,6 +34,15 @@ body::before {
   }
 }
 
+@media (min-width: 400px) {
+  body::before {
+    background-attachment: fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), #040404 url("../img/mobilecrop.jpg") top right no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}
+
 a {
   color: #18d26e;
   text-decoration: none;
